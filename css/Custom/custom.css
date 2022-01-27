@@ -1,0 +1,139 @@
+*{
+    font-family: 'Hind', sans-serif;
+}
+
+.container h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.container h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.container h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:inherit;
+    color: white;
+}
+
+.navbar{
+    background:black;
+}
+
+
+.navbar .navbar-nav{
+    margin: 0px 320px;
+}
+
+.navbar .navbar-brand{
+    color: white;
+    padding: 10px;
+    margin-left: 320px;
+    font-size: 30px;
+}
+
+.navbar .navbar-brand:hover{
+    color:lightgray;
+}
+
+.navbar .navbar-collapse {
+ justify-content: end;
+}
+
+.navbar .collapse .nav-item .nav-link{
+    color: white;  
+}
+
+.navbar .collapse .nav-item .nav-link:hover{
+    color: lightgray;
+    
+}
+
+/*-----------------APRESENTAÇÃO-----------------*/
+div.background{
+    background-color:black;
+    padding: 100px 0px;
+}
+
+#apresentation h1{
+    color: white;
+    padding-bottom: 15px;
+}
+
+#apresentation a i{
+    color: white;
+    font-size: 35px;
+}
+
+
+/*-----------------SOBRE MIM-----------------*/
+#about-me{
+    justify-items: center;
+    padding: 60px 0px;
+}
+
+#about-me h4{
+    color: black;
+}
+
+#about-me p{
+    font-size: 20px;
+}
+.about-content{
+    margin-top: 80px;
+    text-align: justify;
+    display:flex;
+}
+
+.container .about-description .btn{
+    margin-top: 90px;
+    border: 1px black solid;
+    background-color: white;
+    color: black;
+}
+
+.container .about-description i{
+    margin-left: 12px;
+}
+
+/*------------ENTRE EM CONTATO---------------*/
+#contact-me h1{
+    color: white;
+}
+
+#contact-me .container-contact{
+    display: flex;
+    justify-content: center;
+}
+
+#contact-me .informations {
+    color:white;
+}
+
+#contact-me .informations ul{
+    list-style: none;  
+}
+
+#contact-me .informations i{
+    font-size: 30px;
+    text-align: left;
+    padding-top: 50px;
+}
+
+#contact-me .container-contact .forms {
+    padding-top: 55px;
+}
+
+#contact-me .container-contact .forms #inputMensage{
+    height: 300px;
+}
+
+#contact-me .btn{
+    border: 1px white solid;
+    background-color: black;
+    color: white;
+}
