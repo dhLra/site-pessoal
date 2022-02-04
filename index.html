@@ -112,20 +112,29 @@
                         </li>
                     </ul>
                 </div>
-                <div class="forms col-7">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-6">
-                                <input type="name" class="form-control" id="inputName4" placeholder="Name">
+                <div class="forms col-7"> 
+                    <form action="https://api.staticforms.xyz/submit" method="POST">
+                        <input type="hidden" name="accessKey" value="19f39f35-037f-4288-b960-0bb39c515006">
+                        <input type="hidden" name="redirectTo" value="https://www.google.com/">
+                        <div class="row g-3">
+                            <div class="mb-3 col-6">
+                                <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Digite seu email">
                             </div>
-                            <div class="form-group col-6">
-                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <div class="mb-3 col-6">
+                                <input type="text" name ="name" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Digite seu nome">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="inputMensage" placeholder="Mensage">
+                        <div class="mb-3">
+                            <input type="text" name="phone" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Contato">
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <div class="mb-3">
+                            <textarea class="form-control" name="message" id="exampleFormControlTextarea1"
+                                placeholder="Sua mengassem aqui!" rows="10"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" value="Submit">Enviar</button>
                     </form>
                 </div>
             </div>
