@@ -7,28 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <!--Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="css/Custom/custom.css">
     <!--Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!--- FontAwose script-->
     <script src="https://kit.fontawesome.com/afc7c9c072.js" crossorigin="anonymous"></script>
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 
-    <title>Minha pagina</title>
+    <title>Dhiego Lira - Portfólio</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">dhLra_</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid container-navbar">
+            <div class="col-6 col-md-6 col-sm-6">
+                <a class="navbar-brand" href="#">dhLra_</a>
+            </div>
             <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre mim</a>
+                        <a class="nav-link" href="#aboutme">Sobre mim</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://github.com/dhLra">Projetos</a>
@@ -50,96 +48,52 @@
                     </li>
                 </ul>
             </div>
-        </nav>
-    </header>
-    <div class="background">
-        <div class="container" id="apresentation">
-            <div class="row align-items-center">
-                <div class="profile-photo col-5">
+        </div>
+    </nav>
+
+    <div class="background-black" style="background-color: black;">
+        <div class="container d-flex justify-content-center" style="height: 100vh;">
+            <div class="row d-flex flex-row">
+                <div class="col-12 col-md-6 col-sm-12 align-items-center justify-content-center d-flex">
                     <img src="img/profile-photo.jpg" alt="Dhiego Lira's Photo" class="rounded-circle profile"
                         width="90%" style="border: 3px white solid;">
                 </div>
-                <div class="description col-5">
-                    <h1> Oi, meu nome é Dhiego</h1>
-                    <h4>Full Stack Developer Jr.</h4>
-                    <h2>Níveis iniciais em desenvolvimento Web Font/Back-End!</h2>
-                    <a href="https://www.google.com" target="_blank" class="btn"
-                        style="border: 1px solid white; color:white">Entre em contato</a>
-                    <a class="btn" target="_blank" href="https://github.com/dhLra"><i class="fab fa-github"></i></a>
-                    <a class="btn" target="_blank" href="https://www.linkedin.com/in/dhiego-lira-7291b521a/"><i
-                            class="fab fa-linkedin"></i></a>
+                <div class="col-12 col-md-6 col-sm-12 align-items-start justify-content-center d-flex flex-column">
+                    <h1><strong> Oi, meu nome é Dhiego! :D </strong></h1>
+                    <!-- <h4>FullStack Developer</h4> -->
+                    <h4> Com conhecimentos em:</h4>
+                    <div class="knowloge">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-node"></i>
+                        <i class="fab fa-docker"></i>
+                        <i class="fa fa-cloud"></i>
+                        <i class="fa fa-database"></i>
+                    </div>
+
+                    <!-- <a href="https://www.google.com" target="_blank" class="btn btn-getting-touch "
+                          >Entre em contato</a> -->
+                    <h5 class="mt-3">Me contate:</h5>
+                    <div class="d-flex flex-row">
+                        <a target="_blank" href="https://github.com/dhLra"><i class="fab fa-github"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/dhiego-lira-7291b521a/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/dhinovonao/"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container text-center" id="about-me">
-        <h1>Sobre mim</h1>
-        <h4>Minhas Expeciências</h4>
-        <div class="row align-items-center">
-            <div class="about-content">
-                <div class="about-photo col-6">
-                    <img src="img/sobremim.jpg" alt="" class="about-img">
-                </div>
-                <div class="about-description col-6">
-                    <p>Olá, meu nome é Dhiego Vinícius de Lira, atualmente trabalho na <a
-                            href="https://fbrdigital.com.br/" target="_blank">FBR Digital</a> no
-                        setor de pesquisa e desenvolvimento (P&D),no momento estou no nível júnior e foco
-                        no estudo de desenvolvimento web font/back-end.
-                    </p>
-                    <p>Você pode saber mais baixando meu currículo, que esta disponível abaixo. :)</p>
-                    <a href="DHIEGO_VINICIUS_DE_LIRA_CURRICULO.pdf" target="_blank"
-                        downlaod="DHIEGO_VINICIUS_DE_LIRA_CURRICULO.pdf" type="aplication/pdf" class="btn">Downoload
-                        CV<i class="fas fa-download"></i></a>
-                </div>
+
+    <div class="background-white" style="background-color: white;">
+        <div class="container d-flex justify-content-center" style="height: 100vh;">
+            <div class="row d-flex flex-row mt-4" id="aboutme">
+                <h1><strong>Sobre mim</strong></h1>
             </div>
         </div>
-    </div>
-    <div class="background">
-        <div class="container text-center" id="contact-me">
-            <h1>Entre em contato</h1>
-            <h4>Canais de contato</h4>
-            <div class="container-contact">
-                <div class="informations col-5">
-                    <ul>
-                        <li><i class="far fa-envelope"></i>
-                            <h3>Email</h3> dhiegolira11@gmail.com
-                        </li>
-                        <li><i class="fas fa-phone-alt"></i>
-                            <h3>Telefone</h3>+55 081 9 9311-6884
-                        </li>
-                        <li><i class="fas fa-map-marker-alt"></i>
-                            <h3>Localização</h3>Brasil - Caruaru/PE
-                        </li>
-                    </ul>
-                </div>
-                <div class="forms col-7"> 
-                    <form action="https://api.staticforms.xyz/submit" method="POST">
-                        <input type="hidden" name="accessKey" value="19f39f35-037f-4288-b960-0bb39c515006">
-                        <input type="hidden" name="redirectTo" value="https://www.google.com/">
-                        <div class="row g-3">
-                            <div class="mb-3 col-6">
-                                <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Digite seu email">
-                            </div>
-                            <div class="mb-3 col-6">
-                                <input type="text" name ="name" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Digite seu nome">
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" name="phone" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Contato">
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" name="message" id="exampleFormControlTextarea1"
-                                placeholder="Sua mengassem aqui!" rows="10"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" value="Submit">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 
