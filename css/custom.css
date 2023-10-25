@@ -42,7 +42,7 @@ a {
 .background-black i {
     font-size: 35px;
     color: white;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .background-black i:hover {
@@ -91,8 +91,9 @@ a {
 
 .background-white i {
     font-size: 35px;
+    padding: 0px 25px;
     color: black;
-    margin-right: 20px;
+    margin-top: 10px;
 }
 
 .background-white i:hover {
