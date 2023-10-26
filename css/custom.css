@@ -71,6 +71,7 @@ i{
 }
 
 .background-white {
+    background-color: white;
     color: black;
 }
 
@@ -85,6 +86,7 @@ i{
     color: rgb(154, 154, 154)
 }
 .background-black {
+    background-color: black;
     color: white;
 }
 
@@ -100,4 +102,7 @@ i{
 
 .card-body i{
     color: black;
+}
+.card-descripton{
+    height: 180px;
 }
