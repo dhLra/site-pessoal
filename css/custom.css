@@ -16,6 +16,12 @@ i{
     display: block;
 }
 
+.nav-link {
+  padding-right: 0px;
+}
+.nav-link i{
+    font-size: xx-large;
+}
 .navbar-brand,
 .nav-link {
     color: white
@@ -32,7 +38,6 @@ i{
 .profile {
     width: 350px;
 }
-
 
 .apresentation{
     font-size: 75px;
