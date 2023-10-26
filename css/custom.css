@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Hind', sans-serif;
 }
-
+i{
+    font-size: 40px;
+}
 .navbar {
     background-color: black;
     position: relative;
@@ -73,7 +75,7 @@
 }
 
 .background-white i {
-    font-size: 35px;
+
     padding: 0px 25px;
     color: black;
     margin-top: 10px;
@@ -87,7 +89,7 @@
 }
 
 .background-black i {
-    font-size: 35px;
+    
     color: white;
     margin-right: 25px;
 }
