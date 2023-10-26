@@ -31,23 +31,6 @@
     width: 350px;
 }
 
-.background-black h1,
-h2,
-h4,
-h5,
-a {
-    color: white;
-}
-
-.background-black i {
-    font-size: 35px;
-    color: white;
-    margin-right: 25px;
-}
-
-.background-black i:hover {
-    color: rgb(154, 154, 154)
-}
 
 .apresentation{
     font-size: 75px;
@@ -98,4 +81,21 @@ a {
 
 .background-white i:hover {
     color: rgb(154, 154, 154)
+}
+.background-black {
+    color: white;
+}
+
+.background-black i {
+    font-size: 35px;
+    color: white;
+    margin-right: 25px;
+}
+
+.background-black i:hover {
+    color: rgb(154, 154, 154)
+}
+
+.card-body i{
+    color: black;
 }

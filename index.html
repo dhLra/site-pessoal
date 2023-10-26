@@ -29,7 +29,7 @@
                         <a class="nav-link" href="#aboutme">Sobre mim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://github.com/dhLra">Projetos</a>
+                        <a class="nav-link" href="#projects">Projetos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -53,19 +53,52 @@
 
     <div class="background-black" style="background-color: black;">
         <div class="container d-flex justify-content-center" style="height: 100vh;">
-            <div class="row d-flex flex-row">
-                <div class="col-12 col-md-6 col-sm-12 w-100  align-items-center justify-content-center d-flex">
+            <div class="row d-flex flex-column align-items-center">
+                <!-- <div class="col-12 col-md-6 col-sm-12 w-100  align-items-center justify-content-center d-flex">
                     <img src="img/profile-photo.jpg" alt="Dhiego Lira's Photo" class="rounded-circle profile mt-3"
                         width="90%" style="border: 3px white solid;">
-                </div>
-                <div
-                    class="col-12 col-md-6 col-sm-12 w-100 align-items-start justify-content-center d-flex flex-column">
-                    <h1 class="apresentation"> Oi, meu nome é Dhiego! </h1>
-                    <!-- <h4>FullStack Developer</h4> -->
-                    <!-- <h4> Com conhecimentos em:</h4>
-                    <div class="knowloge">
+                </div> -->
+
+                    <div class="col d-flex justify-content-center">
+                        <img src="img/profile-photo.jpg" alt="Dhiego Lira's Photo" class="rounded-circle profile mt-3"
+                            width="90%" style="border: 3px white solid; position: absolute;">
+                        <img src="img/pikachu.gif" width="160px" height="150px" style="position: relative; top: 220px; left: -100px;">
+                    </div>
+                    <div class="col text-center">
+                        <h1 class="apresentation"> Oi, meu nome é Dhiego! </h1>
+                        <p class="">Desenvolvendor FullStack, guitarrista iniciante e nordetino arretado</p>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="background-white" style="background-color: white;">
+        <div class="text-center" id="aboutme">
+            <h1 class="mt-4"><strong>Sobre mim</strong></h1>
+        </div>
+        <div class="container d-flex flex-column align-items-center" style="height: 50vh;">
+            <div class="row d-flex flex-row text-center">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-6 col-sm-12">
+                        <img src="/img/sobremim.jpg" width="100%" />
+                    </div>
+                    <div class="col-12 col-md-6 col-sm-12 mt-2 text-center">
+                        <p>Olá, meu nome é Dhiego Vinícius de Lira formado em Ciência da Computação, atualmente trabalho
+                            na <a href="https://fbrdigital.com.br/" target="_blank" style="color: blue;">FBR
+                                Digital</a>, faço parte do time de Plataforma como Analista de Sistemas Jr. Meus focos
+                            são em tecnologias
+                            voltadas para desenvolvimento web, cloud e modelagem de dados.
+                        </p>
+                        <p>Aqui estão algumas das tecnologias, frameworks e conceitos os quais tenho dominio:
+                        </p>
+                        <!-- <a href="DHIEGO_VINICIUS_DE_LIRA_CURRICULO.pdf" target="_blank"
+                                downlaod="DHIEGO_VINICIUS_DE_LIRA_CURRICULO.pdf" type="aplication/pdf"
+                                style="color: black;">Downoload
+                                CV<i class="fas fa-download"></i></a> -->
                         <i class="fab fa-html5"></i>
                         <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-bootstrap"></i>
                         <i class="fab fa-js"></i>
                         <i class="fab fa-react"></i>
                         <i class="fab fa-node"></i>
@@ -73,69 +106,86 @@
                         <i class="fa fa-cloud"></i>
                         <i class="fa fa-database"></i>
                     </div>
-
-                     <a href="https://www.google.com" target="_blank" class="btn btn-getting-touch "
-                          >Entre em contato</a> 
-                    <h5 class="mt-3">Me contate:</h5>
-                    <div class="d-flex flex-row">
-                        <a target="_blank" href="https://github.com/dhLra"><i class="fab fa-github"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/dhiego-lira-7291b521a/"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/dhinovonao/"><i
-                                class="fab fa-instagram"></i></a>
-                    </div> -->
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="background-white" style="background-color: white;">
-        <div class="container d-flex flex-column align-items-center" style="height: 100vh;">
-            <div class="row d-flex flex-row mt-4" id="aboutme">
-                <h1><strong>Sobre mim</strong></h1>
-            </div>
-            <div class="row d-flex flex-row text-center">
-                <div class="about-description col-12">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-12 col-md-6 col-sm-12">
-                            <img src="/img/sobremim.jpg" width="100%" />
+    <!-- <div class="background-black" style="background-color: black;">
+        <div class="text-center" id="projects">
+            <h1 class=""><strong>Projetos</strong></h1>
+        </div>
+        <div class="container d-flex flex-row align-items-center justify-content-center" style="height: 100vh;">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Todaily</strong></h5>
+                            <p>É um sistema construido para gerenciar agendas de terapeutas e pacientes correlacionando
+                                a disponibilidade de salas para atendimentos disponiveis.
+                            </p>
+                            <p><strong>Status:</strong> Finalizado</p>
+                            <label class="card-text"><strong>Tecnologias utilizadas:</strong></label>
+                            <div class="row d-flex justify-content-center mb-3">
+                                <i class="fab fa-react card-icon"></i>
+                                <i class="fab fa-node card-icon"></i>
+                                <i class="fab fa-docker card-icon"></i>
+                            </div>
+                            <button class="btn btn-primary align-items-center d-flex"><a
+                                    href="https://github.com/dhLra/room-maneger-front" target="_blank"
+                                    class="text-white"> <i class="fab text-white fa-github-alt"
+                                        style="font-size: large;"></i> Ver no
+                                    Github</a></button>
                         </div>
-                        <div class="col-12 col-md-6 col-sm-12 mt-2 text-center">
-                            <p>Olá, meu nome é Dhiego Vinícius de Lira, atualmente trabalho na <a
-                                    href="https://fbrdigital.com.br/" target="_blank" style="color: blue;">FBR
-                                    Digital</a>, faço parte do time de Plataforma como Analista de Sistemas Jr. Meu foco
-                                são em tecnologias
-                                voltadas para desenvolvimento web, cloud e modelagem de dados.
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Which Film Today</strong></h5>
+                            <p>É um sorteador de filmes para pessoas que não conseguem escolher o que assistir, se
+                                conectando a
+                                API's
+                                externas para ter uma database ampla.
                             </p>
-                            <p>Aqui estão algumas das tecnologias, frameworks e conceitos o quais tenho dominio:
+                            <p><strong>Status:</strong> Em desenvolvimento</p>
+                            <label class="card-text"><strong>Tecnologias utilizadas:</strong></label>
+                            <div class="row d-flex justify-content-center mb-3">
+                                <i class="fab fa-react card-icon"></i>
+                                <i class="fab fa-docker card-icon"></i>
+                            </div>
+                            <button class="btn btn-primary align-items-center d-flex"><a href="" class="text-white"> <i
+                                        class="fab text-white fa-github-alt" style="font-size: large;"></i> Ver no
+                                    Github</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Portfólio</strong></h5>
+                            <p>É justamente o site em que você está agora! feito para aprensetar minhas skills e mostrar
+                                um
+                                pouco da minha personalidade para você.
                             </p>
-                            <!-- <a href="DHIEGO_VINICIUS_DE_LIRA_CURRICULO.pdf" target="_blank"
-                                downlaod="DHIEGO_VINICIUS_DE_LIRA_CURRICULO.pdf" type="aplication/pdf"
-                                style="color: black;">Downoload
-                                CV<i class="fas fa-download"></i></a> -->
-
+                            <p><strong>Status:</strong> Em desenvolvimento</p>
+                            <label class="card-text"><strong>Tecnologias utilizadas:</strong></label>
+                            <div class="row d-flex justify-content-center mb-3">
                                 <i class="fab fa-html5"></i>
                                 <i class="fab fa-css3-alt"></i>
                                 <i class="fab fa-bootstrap"></i>
                                 <i class="fab fa-js"></i>
-                                <i class="fab fa-react"></i>
-                                <i class="fab fa-node"></i>
-                                <i class="fab fa-docker"></i>
-                                <i class="fa fa-cloud"></i>
-                                <i class="fa fa-database"></i>
-
+                            </div>
+                            <button class="btn btn-primary align-items-center d-flex"><a
+                                    href="https://github.com/dhLra/site-pessoal" target="_blank" class="text-white"> <i
+                                        class="fab text-white fa-github-alt" style="font-size: large;"></i> Ver no
+                                    Github</a></button>
                         </div>
                     </div>
-
                 </div>
-
-                <div class="col-12 mt-4 ">
-
-                </div>
-
             </div>
         </div>
-    </div>
+    </div> -->
 
 </body>
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
