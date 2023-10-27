@@ -236,12 +236,12 @@
                         <input type="hidden" name="redirectTo" value="https://www.google.com/">
                         <div class="row g-3">
                             <div class="mb-3 col-6">
-                                <input disabled type="email" name="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Digite seu email">
+                                <input disabled type="email" name="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Digite seu email">
                             </div>
                             <div class="mb-3 col-6">
-                                <input disabled type="text" name="name" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Digite seu nome">
+                                <input disabled type="text" name="name" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Digite seu nome">
                             </div>
                         </div>
                         <div class="mb-3">
@@ -276,6 +276,16 @@
     const apresentation = document.querySelector('h1')
     console.log(apresentation)
     typeWriter(apresentation)
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5KGRH52EED"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5KGRH52EED');
 </script>
 
 </html>
