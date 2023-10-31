@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Hind', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
-i{
+
+i {
     font-size: 40px;
 }
+
 .navbar {
     background-color: black;
     position: relative;
@@ -17,11 +21,13 @@ i{
 }
 
 .nav-link {
-  padding-right: 0px;
+    padding-right: 0px;
 }
-.nav-link i{
+
+.nav-link i {
     font-size: xx-large;
 }
+
 .navbar-brand,
 .nav-link {
     color: white
@@ -39,12 +45,13 @@ i{
     width: 350px;
 }
 
-.apresentation{
+.apresentation {
     font-size: 75px;
     font-weight: bold;
     position: relative;
     padding: inherit;
 }
+
 .apresentation::after {
     content: "|";
     margin-left: 5px;
@@ -62,12 +69,15 @@ i{
 } */
 
 @keyframes blinckCursor {
-  0%, 100% {
-    opacity: 1;
-  }
-  50%{
-    opacity: 0;
-  }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 .btn-getting-touch {
@@ -90,13 +100,14 @@ i{
 .background-white i:hover {
     color: rgb(154, 154, 154)
 }
+
 .background-black {
     background-color: black;
     color: white;
 }
 
 .background-black i {
-    
+
     color: white;
     margin-right: 25px;
 }
@@ -105,14 +116,15 @@ i{
     color: rgb(154, 154, 154)
 }
 
-.card-body i{
+.card-body i {
     color: black;
 }
-.card-descripton{
+
+.card-descripton {
     height: 180px;
 }
 
-.btn-form-email{
+.btn-form-email {
     background-color: black;
     color: white;
     border-color: white;
