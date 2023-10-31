@@ -111,3 +111,9 @@ i{
 .card-descripton{
     height: 180px;
 }
+
+.btn-form-email{
+    background-color: black;
+    color: white;
+    border-color: white;
+}

@@ -231,10 +231,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-sm-6 mt-5 mb-3">
-                    <!-- <form class="text-center" action="https://api.staticforms.xyz/submit" method="POST"> -->
-                    <form class="text-center" id="signup" action="" onsubmit="preventDefault()">
-                        <!-- <input type="hidden" name="accessKey" value="da5a19af-4a07-4133-8d8a-1f2155cc25f4">
-                        <input type="hidden" name="redirectTo" value="https://www.google.com/"> -->
+                    <form class="text-center" id="sendEmail">
                         <div class="row g-3">
                             <div class="mb-3 col-6">
                                 <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
@@ -253,7 +250,7 @@
                             <textarea class="form-control" name="message" id="exampleFormControlTextarea1"
                                 placeholder="Sua mengassem aqui!" rows="10"></textarea>
                         </div>
-                        <button type="submit" id="submit-btn" class="btn btn-primary" value="Submit">Enviar</button>
+                        <button type="submit" id="submit-btn" class="btn btn-form-email" value="Submit">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -264,40 +261,11 @@
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 <script>
 
-    const form = document.getElementById('signup');
-
+    const form = document.getElementById('sendEmail');
     form.addEventListener('submit', (event) => {
-
         event.preventDefault()
         let formValues = document.getElementsByClassName('form-control')
-        console.log(formValues.email.value)
-
-        const data = JSON.stringify({
-            "Messages": [{
-                "From": { "Email": formValues.email.value, "Name": formValues.name.value },
-                "To": [{ "Email": "dhiegolira11@gmail.com", "Name": 'Dhiego' }],
-                "Subject": 'teste',
-                "TextPart": `${formValues.email.value} Contato: ${formValues.phone.value}`
-            }]
-        });
-
-        const config = {
-            method: 'post',
-            url: 'https://api.mailjet.com/v3.1/send',
-            data: data,
-            headers: { 'Content-Type': 'application/json' },
-            auth: { username: '6a4f487e5c51491407c0a484748ecb42', password: '30de2eb717b3607ada0f8aafdae86cce' },
-        };
-
-        return axios(config)
-            .then(function (response) {
-                console.log(JSON.stringify(response.data));
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-
-
+        window.open("mailto:dhiegolira11@gmail.com?subject=Entrando em contato&body=" + formValues.message.value + "%0D%0Acontato: "  + formValues.phone.value + " %0D%0Anome:" + formValues.name.value)
     });
 
     function typeWriter(elemento) {
@@ -309,7 +277,6 @@
             }, 75 * i)
         });
     }
-
 
     const apresentation = document.querySelector('h1')
     console.log(apresentation)
@@ -326,4 +293,5 @@
     gtag('config', 'G-5KGRH52EED');
 </script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </html>
