@@ -183,7 +183,7 @@
                 </div>
                 <div class="col-md-4 col-12 col-sm-4 mb-3 d-flex align-items-center justify-content-center">
                     <div class="card" style="width: 18rem;">
-                        <img src="/img/download.png" class="card-img-top" alt="...">
+                        <img src="https://placehold.co/600x500" class="card-img-top" alt="...">
                         <label>Calculadora</label>
                     </div>
                 </div>
@@ -195,13 +195,13 @@
                 </div>
                 <div class="col-md-4 col-12 col-sm-4 mb-3 d-flex align-items-center justify-content-center">
                     <div class="card" style="width: 18rem;" onclick="console.log('oi')">
-                        <img src="/img/download.png" class="card-img-top" alt="...">
+                        <img src="https://placehold.co/600x500" class="card-img-top" alt="...">
                         <label>???</label>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 col-sm-4 mb-3 d-flex align-items-center justify-content-center">
                     <div class="card" style="width: 18rem;">
-                        <img src="/img/download.png" class="card-img-top" alt="...">
+                        <img src="https://placehold.co/600x500" class="card-img-top" alt="...">
                         <label>???</label>
                     </div>
                 </div>
@@ -231,28 +231,29 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-sm-6 mt-5 mb-3">
-                    <form class="text-center" action="https://api.staticforms.xyz/submit" method="POST">
-                        <input type="hidden" name="accessKey" value="19f39f35-037f-4288-b960-0bb39c515006">
-                        <input type="hidden" name="redirectTo" value="https://www.google.com/">
+                    <!-- <form class="text-center" action="https://api.staticforms.xyz/submit" method="POST"> -->
+                    <form class="text-center" id="signup" action="" onsubmit="preventDefault()">
+                        <!-- <input type="hidden" name="accessKey" value="da5a19af-4a07-4133-8d8a-1f2155cc25f4">
+                        <input type="hidden" name="redirectTo" value="https://www.google.com/"> -->
                         <div class="row g-3">
                             <div class="mb-3 col-6">
-                                <input disabled type="email" name="email" class="form-control"
-                                    id="exampleFormControlInput1" placeholder="Digite seu email">
+                                <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Digite seu email">
                             </div>
                             <div class="mb-3 col-6">
-                                <input disabled type="text" name="name" class="form-control"
-                                    id="exampleFormControlInput1" placeholder="Digite seu nome">
+                                <input type="text" name="name" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Digite seu nome">
                             </div>
                         </div>
                         <div class="mb-3">
-                            <input disabled type="text" name="phone" class="form-control" id="exampleFormControlInput1"
+                            <input type="text" name="phone" class="form-control" id="exampleFormControlInput1"
                                 placeholder="Contato">
                         </div>
                         <div class="mb-3">
-                            <textarea disabled class="form-control" name="message" id="exampleFormControlTextarea1"
+                            <textarea class="form-control" name="message" id="exampleFormControlTextarea1"
                                 placeholder="Sua mengassem aqui!" rows="10"></textarea>
                         </div>
-                        <button disabled type="submit" class="btn btn-primary" value="Submit">Enviar</button>
+                        <button type="submit" id="submit-btn" class="btn btn-primary" value="Submit">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -262,6 +263,43 @@
 </body>
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 <script>
+
+    const form = document.getElementById('signup');
+
+    form.addEventListener('submit', (event) => {
+
+        event.preventDefault()
+        let formValues = document.getElementsByClassName('form-control')
+        console.log(formValues.email.value)
+
+        const data = JSON.stringify({
+            "Messages": [{
+                "From": { "Email": formValues.email.value, "Name": formValues.name.value },
+                "To": [{ "Email": "dhiegolira11@gmail.com", "Name": 'Dhiego' }],
+                "Subject": 'teste',
+                "TextPart": `${formValues.email.value} Contato: ${formValues.phone.value}`
+            }]
+        });
+
+        const config = {
+            method: 'post',
+            url: 'https://api.mailjet.com/v3.1/send',
+            data: data,
+            headers: { 'Content-Type': 'application/json' },
+            auth: { username: '6a4f487e5c51491407c0a484748ecb42', password: '30de2eb717b3607ada0f8aafdae86cce' },
+        };
+
+        return axios(config)
+            .then(function (response) {
+                console.log(JSON.stringify(response.data));
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+
+    });
+
     function typeWriter(elemento) {
         const textoArray = elemento.innerHTML.split('');
         elemento.innerHTML = "";
@@ -287,5 +325,5 @@
 
     gtag('config', 'G-5KGRH52EED');
 </script>
-
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </html>
