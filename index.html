@@ -170,24 +170,26 @@
             </div>
             <div class="row d-flex flex-row ">
                 <div class="col-md-4 col-12 col-sm-4  mb-3 d-flex align-items-center justify-content-center">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#todailyModal">
                         <img src="/img/todaily.jpg" class="card-img-top" alt="...">
                         <label>Todaily</label>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 col-sm-4 mb-3 d-flex align-items-center justify-content-center">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#whichfilmtodayModal">
                         <img src="/img/whichfilmtoday.jpg" class="card-img-top" alt="...">
                         <label>Which Film Today</label>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 col-sm-4 mb-3 d-flex align-items-center justify-content-center">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://placehold.co/600x500" class="card-img-top" alt="...">
-                        <label>Calculadora</label>
+                        <img src="/img/myminihero.jpeg" class="card-img-top" alt="...">
+                        <label>My Mini Hero</label>
                     </div>
                 </div>
-                <div class="col-md-4 col-12 col-sm-4 mb-3 d-flex align-items-center justify-content-center">
+                <!-- <div class="col-md-4 col-12 col-sm-4 mb-3 d-flex align-items-center justify-content-center">
                     <div class="card" style="width: 18rem;">
                         <img src="/img/myminihero.jpeg" class="card-img-top" alt="...">
                         <label>My Mini Hero</label>
@@ -203,6 +205,104 @@
                     <div class="card" style="width: 18rem;">
                         <img src="https://placehold.co/600x500" class="card-img-top" alt="...">
                         <label>???</label>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- <div class="row justify-content-center mb-4">
+                <div class="row background-black"
+                    style="height: 150px; width: 50%;background-color: rgb(1, 1, 1);">
+                    <div class="row w-100" style="height: 50px; padding: 15px 0px 0px 30px;">
+                        <div class="col-2">
+                            <img class="rounded-circle" src="img/profile-photo.jpg" width="60" height="60">
+                        </div>
+                        <div class="col d-flex flex-column">
+                            <div class="row">
+                                <h6 class="pt-2 p-1 mb-0"><strong>Dhiego Lira</strong></h6>
+                                <h6 class="pt-2 mb-0" style="color: rgb(142, 141, 141);">@dhiegolira</h6>
+                            </div>
+                            <div class="row">
+                                <p> Oi! Fiz LITERALMENTE me proprio tweet :D</p>
+                            </div>
+                            <div class="row">
+                                <i class="fa fa-thumbs-up fa-lg"></i>
+                                <i class="fa fa-repeat fa-rotate-90 fa-lg"></i>
+                                <i class="fa fa-comment fa-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="todailyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-xl">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <h3 class="modal-title" id="exampleModalLabel">Todaily</h3>
+                            <button type="button" class="btn-close btn" data-bs-dismiss="modal"
+                                aria-label="Close">X</button>
+                        </div>
+                        <div class="row mt-4 text-justify">
+                            Foi desenvolvido um sistema para uma clínica de terapia infantil com o objetivo
+                            principal de facilitar a gestão de terapeutas, pacientes e salas, estabelecendo conexões
+                            entre eles. Além disso, o sistema permite a administração dos perfis de todos os
+                            usuários, permitindo a configuração dos níveis de acesso de acordo com a função de cada
+                            terapeuta.
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-7 justify-content-around d-flex">
+                                <i class="fab fa-react" style="font-size: 30px;"></i>
+                                <i class="fab fa-bootstrap" style="font-size: 30px;"></i>
+                                <i class="fab fa-node card-icon" style="font-size: 30px;"></i>
+                                <i class="fab fa-docker card-icon" style="font-size: 30px;"></i>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://github.com/dhLra"><button
+                                        type="button d-flex align-items-center justify-content-center"
+                                        class="btn btn-primary">Ver no Github <i class="fab fa-github"
+                                            style="font-size: large; padding: 0 5px; margin-top: 0; color:white"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="whichfilmtodayModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-xl">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <h3 class="modal-title" id="exampleModalLabel">Which Film Today</h3>
+                            <button type="button" class="btn-close btn" data-bs-dismiss="modal"
+                                aria-label="Close">X</button>
+                        </div>
+                        <div class="row mt-4 text-justify">
+                            ...
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-7 justify-content-around d-flex">
+                                <i class="fab fa-react" style="font-size: 30px;"></i>
+                                <i class="fab fa-bootstrap" style="font-size: 30px;"></i>
+                                <i class="fab fa-docker card-icon" style="font-size: 30px;"></i>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://github.com/dhLra"><button
+                                        type="button d-flex align-items-center justify-content-center"
+                                        class="btn btn-primary">Ver no Github <i class="fab fa-github"
+                                            style="font-size: large; padding: 0 5px; margin-top: 0; color:white"></i></button></a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -265,7 +365,7 @@
     form.addEventListener('submit', (event) => {
         event.preventDefault()
         let formValues = document.getElementsByClassName('form-control')
-        window.open("mailto:dhiegolira11@gmail.com?subject=Entrando em contato&body=" + formValues.message.value + "%0D%0Acontato: "  + formValues.phone.value + " %0D%0Anome:" + formValues.name.value)
+        window.open("mailto:dhiegolira11@gmail.com?subject=Entrando em contato&body=" + formValues.message.value + "%0D%0Acontato: " + formValues.phone.value + " %0D%0Anome:" + formValues.name.value)
     });
 
     function typeWriter(elemento) {
