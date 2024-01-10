@@ -130,3 +130,18 @@ i {
     border-color: white;
 }
 
+.btn-project-card{
+    background-color: #000;
+    color: #fff;
+    border:none;
+    padding: 10px 0px ;
+}
+
+.btn-project-card:disabled{
+    background-color: #525252;
+}
+
+.card-ttile{
+    padding-left: 10px;
+    padding-top: 10px;
+}
