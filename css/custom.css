@@ -145,3 +145,14 @@ i {
     padding-left: 10px;
     padding-top: 10px;
 }
+
+.cert-row{
+    padding: 15px;
+    border: #ffffff 1px solid;
+    border-radius: 20px;
+}
+
+.cert-row:hover{
+    border: #cdcdcd 1px solid;
+    border-radius: 5px;
+}
